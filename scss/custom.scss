@@ -1,1 +1,15 @@
-@use "../node_modules/bootstrap/scss/bootstrap";
+@use "../node_modules/bootstrap/scss/bootstrap" with (
+    $theme-colors: (
+    "primary": (
+      "base": #9CBB75,
+      "fg": #76A742,
+      "bg": #9CBB75,
+      "border": #91b56a,
+      "focus-ring": #9CBB75,
+      "contrast": #FDFEFC
+    )
+  ),
+
+  $enable-rounded: false,
+  $enable-shadows: false
+);
