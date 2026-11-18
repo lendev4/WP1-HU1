@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hallo Mehrweg</title>
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="container my-4 fw-semibold">
+    <nav class="d-flex flex-wrap align-items-center gap-3" aria-label="Hauptnavigation">
+
+      <!-- left column: logo on mobile, empty spacer on desktop (keeps the list centered) -->
+      <div class="col">
+        <a class="lg:d-none" href="main.html">
+          <img src="img/logo.svg" alt="Hallo Mehrweg" height="40">
+        </a>
+      </div>
+
+      <ul class="nav theme-primary col-12 lg:col-auto justify-content-center align-items-center order-last lg:order-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">PRODUKTE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ANBIETER</a>
+        </li>
+        <li class="nav-item d-none lg:d-flex mx-6">
+          <a href="main.html">
+            <img src="img/logo.svg" alt="Hallo Mehrweg" height="40">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ÜBER UNS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">KONTAKT</a>
+        </li>
+      </ul>
+
+      <!-- right column: icons + search -->
+      <div class="col d-flex flex-column align-items-end gap-1">
+        <div class="d-flex gap-2 pe-2">
+          <a href="merkliste.html"><img src="img/icon-heart.svg" alt="Merkliste" width="16" height="16"></a>
+          <a href="warenkorb.html"><img src="img/icon-cart.svg" alt="Warenkorb" width="16" height="16"></a>
+          <a href="konto.html"><img src="img/icon-user.svg" alt="Konto" width="16" height="16"></a>
+        </div>
+
+        <search>
+          <label class="form-control form-adorn form-adorn-end border-0 py-0 min-h-0 bg-1 w-10 pe-2">
+            <div class="form-adorn-icon" aria-hidden="true">
+              <img src="img/icon-search.svg" alt="" width="16" height="16">
+            </div>
+            <input type="search" id="search" class="form-ghost" aria-label="Suchen">
+          </label>
+        </search>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <!-- Main Content -->
+    <div class="bg-1 d-flex justify-content-center align-items-center py-10">
+      Main
+    </div>
+  </main>
+
+  <footer class="bg-1 border-top border-3 border-primary mt-6 py-8">
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <h2 class="fg-primary fw-semibold fs-lg">SHOP</h2>
+          <ul class="list-unstyled">
+            <li><a href="ergebnisse.html">Flaschen</a></li>
+            <li><a href="ergebnisse.html">Schüsseln</a></li>
+            <li><a href="ergebnisse.html">Mikrowellen-Produkte</a></li>
+            <li><a href="ergebnisse.html">Frischhalten</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h2 class="fg-primary fw-semibold fs-lg">UNSER</h2>
+          <ul class="list-unstyled">
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="ueber-uns.html">Nachhaltigkeit</a></li>
+            <li><a href="ueber-uns.html">Unternehmensführung</a></li>
+            <li><a href="anbieter.html">Partnerschaften</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h2 class="fg-primary fw-semibold fs-lg">HILFE</h2>
+          <ul class="list-unstyled">
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="ueber-uns.html#faq">Q&amp;A</a></li>
+            <li><a href="konto.html">Mein Konto</a></li>
+            <li><a href="konto.html">Bonuspunkte</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a> und <a href="agb.html">AGB</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h2 class="fg-primary fw-semibold fs-lg">ANMELDEN</h2>
+          <p>Werde Mitglied und sammle Bonuspunkte für deinen nächsten Einkauf!</p>
+          <a href="konto.html" class="btn-solid theme-primary">Jetzt anmelden!</a>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center gap-2 my-3">
+        <a href="#" aria-label="Facebook"><img src="img/social-facebook.svg" alt="" width="18" height="18"></a>
+        <a href="#" aria-label="Pinterest"><img src="img/social-pinterest.svg" alt="" width="18" height="18"></a>
+        <a href="#" aria-label="Twitter"><img src="img/social-twitter.svg" alt="" width="18" height="18"></a>
+        <a href="#" aria-label="YouTube"><img src="img/social-youtube.svg" alt="" width="18" height="18"></a>
+      </div>
+
+      <p class="text-center small mx-auto w-50 fg-3">
+        Der Inhalt dieser Website ist urheberrechtlich geschützt und das Eigentum der MARKE.
+        Das Geschäftskonzept von MARKE lautet: Gestalte deine Zukunft GRÜN
+      </p>
+
+      <div class="text-center">
+        <img src="img/logo.svg" alt="Hallo Mehrweg" height="36">
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>

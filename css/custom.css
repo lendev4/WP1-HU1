@@ -314,7 +314,7 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-bolder: bolder;
-  --primary-base: #9CBB75;
+  --primary-base: #514E4B;
   --primary-fg: #76A742;
   --primary-bg: #9CBB75;
   --primary-border: #91b56a;
@@ -17898,6 +17898,10 @@
   to {
     transform: scale(1);
   }
+}
+:root {
+  --link-decoration: none;
+  --link-hover-decoration: underline;
 }
 
 /*# sourceMappingURL=custom.css.map */
