@@ -61,6 +61,7 @@
   </header>
 
   <main>
+    <!--Hero-->
     <div class="carousel carousel-overlay slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -85,6 +86,88 @@
         </div>
       </div>
     </div>
+    <!--Section
+    * container- und grid- text-center =/= 
+    * container nebeneinander
+    * grind übereinander
+    -->
+
+    <!--py-5 gegen pasenderes austauschen !!!-->
+    <section class="container text-center py-5" >
+      <div class="grid text-center" style="grid-template-columns: 1fr 1fr 1fr;">
+        <div class="col">
+          <img src="img/icon-leaf.svg" alt="" width="64" height="64" class="mb-3">
+          <h3 class="h6 text-primary">Nachhaltig</h3>
+          <p class="small px-md-4">Um nachhaltig auftreten zu können, sind alle Verpackungen aus entsprechenden Materialien gefertigt.</p>
+        </div>
+        <div class="col">
+          <img src="img/icon-sun.svg" alt="" width="64" height="64" class="mb-3">
+          <h3 class="h6 text-primary">Umweltfreundlich</h3>
+          <p class="small px-md-4">Der nachhaltige Lifestyle soll für jedermann erreichbar sein – mit Blick in eine bessere Zukunft.</p>
+        </div>
+        <div class="col">
+          <img src="img/icon-plant.svg" alt="" width="64" height="64" class="mb-3">
+          <h3 class="h6 text-primary">fair behandelt</h3>
+          <p class="small px-md-4">Recycling sowie der verantwortliche Umgang mit Ressourcen ist für uns selbstverständlich.</p>
+        </div>
+      </div class="d-grid place-items-center">
+      <a href="ueber-uns.html" class="btn-solid theme-primary">Mehr erfahren</a>
+    </section>
+
+    <!-- Secton 2-->
+    <!--fix collors in scss !!!-->
+    <section class="container">
+      <div class="highlight-band py-4 px-3">
+        <div class="row align-items-center text-center g-3">
+          <div class="col">
+            <h3 class="h6 text-accent">Nachhaltigkeit</h3>
+            <p class="small mb-0">Nachhaltiges Mehrweg-Geschirr, 100&nbsp;% Made in Germany</p>
+          </div>
+          <div class="col">
+            <img src="img/bowl-wood.jpg" class="img-fluid" alt="Holzschüssel mit Essen und Basilikum">
+          </div>
+          <div class="col">
+            <h3 class="h6 text-accent">Umweltfreundlich</h3>
+            <p class="small mb-0">In der Herstellung durch plastikfreie Produktion</p>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="produkte.html" class="btn-solid theme-primary">Jetzt kaufen</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Section 3-->
+    <!--button opacety??? nicht gantzer button nur der backround weis nicht wie-->
+    <section class="container py-5" aria-labelledby="categories-heading">
+      <h2 id="categories-heading" class="visually-hidden">Kategorien</h2>
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="card category-card border-0 position-relative fg-white">
+            <img src="img/cat-flaschen.jpg" class="card-img" alt="Mehrweg-Flaschen auf Eis">
+            <div class="overlay-box position-absolute bottom-0 start-0 end-0 p-2">
+              <h6>Flaschen</h6>
+              <p class="small mb-1">Entdecke jetzt unsere neuen Designs</p>
+              <a href="ergebnisse.html" class="btn btn-sm fg-white">Jetzt entdecken</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card category-card border-0 position-relative fg-white">
+            <img src="img/cat-schuesseln.jpg" class="card-img" alt="Holzschüssel mit frischem Salat">
+            <div class="overlay-box position-absolute bottom-0 start-0 end-0 p-2">
+              <h6>Schüssel</h6>
+              <p class="small mb-1">Entdecke unsere neue, nachhaltige Becher</p>
+              <a href="ergebnisse.html" class="btn btn-sm fg-white">Jetzt entdecken</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="produkte.html" class="btn-solid theme-primary">Zum Shop</a>
+      </div>
+    </section>
+
   </main>
 
   <footer class="bg-1 border-top border-3 border-primary py-8">
