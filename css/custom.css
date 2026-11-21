@@ -320,15 +320,12 @@
   --primary-border: #91b56a;
   --primary-focus-ring: #9CBB75;
   --primary-contrast: #FDFEFC;
-  --accent-base: var(--indigo-500);
-  --accent-fg: light-dark(var(--indigo-600), color-mix(in oklch, var(--indigo-400), var(--indigo-300)));
-  --accent-fg-emphasis: light-dark(var(--indigo-800), var(--indigo-300));
-  --accent-bg: var(--indigo-500);
-  --accent-bg-subtle: light-dark(var(--indigo-100), var(--indigo-900));
-  --accent-bg-muted: light-dark(var(--indigo-200), var(--indigo-800));
-  --accent-border: light-dark(var(--indigo-300), var(--indigo-600));
-  --accent-focus-ring: light-dark(color-mix(in oklch, var(--indigo-500) 50%, var(--bg-body)), color-mix(in oklch, var(--indigo-500) 75%, var(--bg-body)));
-  --accent-contrast: var(--white);
+  --accent-base: #C3735A;
+  --accent-fg: #B04A2C;
+  --accent-bg: #C3735A;
+  --accent-border: #C3735A;
+  --accent-focus-ring: #C3735A;
+  --accent-contrast: #FDFEFC;
   --success-base: var(--green-500);
   --success-fg: light-dark(var(--green-600), var(--green-400));
   --success-fg-emphasis: light-dark(var(--green-800), var(--green-300));
@@ -9782,10 +9779,7 @@
   .theme-accent {
     --theme-base: var(--accent-base);
     --theme-fg: var(--accent-fg);
-    --theme-fg-emphasis: var(--accent-fg-emphasis);
     --theme-bg: var(--accent-bg);
-    --theme-bg-subtle: var(--accent-bg-subtle);
-    --theme-bg-muted: var(--accent-bg-muted);
     --theme-border: var(--accent-border);
     --theme-focus-ring: var(--accent-focus-ring);
     --theme-contrast: var(--accent-contrast);
@@ -11765,10 +11759,6 @@
     --fg: inherit;
     color: var(--fg);
   }
-  .fg-emphasis-accent {
-    --fg: var(--accent-fg-emphasis);
-    color: var(--fg);
-  }
   .fg-emphasis-success {
     --fg: var(--success-fg-emphasis);
     color: var(--fg);
@@ -11938,7 +11928,7 @@
     text-decoration-color: var(--underline-color);
   }
   .underline-accent {
-    --underline-color: light-dark(var(--indigo-600), color-mix(in oklch, var(--indigo-400), var(--indigo-300)));
+    --underline-color: #B04A2C;
     text-decoration-color: var(--underline-color);
   }
   .underline-success {
@@ -12123,10 +12113,6 @@
     --bg: var(--bg-transparent);
     background-color: var(--bg);
   }
-  .bg-subtle-accent {
-    --bg: var(--accent-bg-subtle);
-    background-color: var(--bg);
-  }
   .bg-subtle-success {
     --bg: var(--success-bg-subtle);
     background-color: var(--bg);
@@ -12149,10 +12135,6 @@
   }
   .bg-subtle-secondary {
     --bg: var(--secondary-bg-subtle);
-    background-color: var(--bg);
-  }
-  .bg-muted-accent {
-    --bg: var(--accent-bg-muted);
     background-color: var(--bg);
   }
   .bg-muted-success {
