@@ -60,6 +60,146 @@
     </nav>
   </header>
 
+  <main class="container py-10 lg:px-12">
+
+    
+    <section class="mb-10" aria-labelledby="login-heading">
+      <h2 id="login-heading" class="fg-primary text-lg fw-semibold mb-3">Du hast bereits ein Konto?</h2>
+      <form class="row">
+        <div class="col-12 lg:col-6">
+          <div class="mb-2">
+            <label for="login-user" class="visually-hidden">Benutzername</label>
+            <input type="text" id="login-user" name="username" class="form-control bg-1 border-0"
+                   placeholder="Benutzername" autocomplete="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="login-pass" class="visually-hidden">Passwort</label>
+            <input type="password" id="login-pass" name="password" class="form-control bg-1 border-0"
+                   placeholder="Passwort" autocomplete="current-password" required>
+          </div>
+          <button type="submit" class="btn-solid theme-primary">Anmelden</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ===== CHECKOUT FORM (billing + payment + order) ===== -->
+    <form id="checkout-form">
+
+      <!-- Rechnungsdetails -->
+      <h2 class="fg-primary text-lg fw-semibold mb-3">Rechnungsdetails und neues Profil erstellen</h2>
+      <div class="row g-3 mb-10">
+
+        <!-- left column -->
+        <div class="col-12 lg:col-6">
+          <div class="mb-3">
+            <label for="anrede" class="form-label text-sm">Anrede</label>
+            <input type="text" id="anrede" name="anrede" class="form-control bg-1" autocomplete="honorific-prefix">
+          </div>
+          <div class="mb-3">
+            <label for="vorname" class="form-label text-sm">Vorname *</label>
+            <input type="text" id="vorname" name="vorname" class="form-control bg-1" autocomplete="given-name" required>
+          </div>
+          <div class="mb-3">
+            <label for="nachname" class="form-label text-sm">Nachname *</label>
+            <input type="text" id="nachname" name="nachname" class="form-control bg-1" autocomplete="family-name" required>
+          </div>
+          <div class="mb-3">
+            <label for="land" class="form-label text-sm">Land</label>
+            <input type="land" id="land" name="land" class="form-control bg-1" autocomplete="country-name">
+          </div>
+          <div class="row g-3">
+            <div class="col-8">
+              <label for="strasse" class="form-label text-sm">Straße *</label>
+              <input type="text" id="strasse" name="strasse" class="form-control bg-1" autocomplete="address-line1" required>
+            </div>
+            <div class="col-4">
+              <label for="hausnummer" class="form-label text-sm">Hausnummer *</label>
+              <input type="text" id="hausnummer" name="hausnummer" class="form-control bg-1" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- right column -->
+        <div class="col-12 lg:col-6">
+          <div class="mb-3">
+            <label for="plz" class="form-label text-sm">Postleitzahl *</label>
+            <input type="text" id="plz" name="plz" class="form-control bg-1" inputmode="numeric" autocomplete="postal-code" required>
+          </div>
+          <div class="mb-3">
+            <label for="ort" class="form-label text-sm">Ort | Stadt *</label>
+            <input type="text" id="ort" name="ort" class="form-control bg-1" autocomplete="address-level2" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefon" class="form-label text-sm">Telefon (optional)</label>
+            <input type="tel" id="telefon" name="telefon" class="form-control bg-1" autocomplete="tel">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-sm">E-Mail-Adresse *</label>
+            <input type="email" id="email" name="email" class="form-control bg-1" autocomplete="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="anmerkung" class="form-label text-sm">Anmerkung zur Bestellung (optional)</label>
+            <textarea id="anmerkung" name="anmerkung" class="form-control bg-1" rows="2"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zahlungsart + Bestellung side by side -->
+      <div class="row g-5">
+
+        <!-- left: payment -->
+        <div class="col-12 lg:col-6">
+          <fieldset>
+            <legend class="fg-primary text-lg fw-semibold mb-3">Zahlungsart wählen</legend>
+            <div class="payment-box p-3">
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="zahlungsart" id="pay-rechnung" value="rechnung" checked>
+                <label class="form-check-label" for="pay-rechnung">
+                  <img src="img/pay-rechnung.svg" alt="" width="18" height="18"> Zahlung auf Rechnung
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="zahlungsart" id="pay-paypal" value="paypal">
+                <label class="form-check-label" for="pay-paypal">
+                  <img src="img/pay-paypal.svg" alt="" width="18" height="18"> Paypal
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="zahlungsart" id="pay-klarna" value="klarna">
+                <label class="form-check-label" for="pay-klarna">
+                  <img src="img/pay-klarna.svg" alt="" width="18" height="18"> Klarna
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- right: order summary -->
+        <div class="col-12 lg:col-6">
+          <h2 class="fg-primary text-lg fw-semibold mb-3">Deine Bestellung</h2>
+          <table class="table text-sm">
+            <caption class="visually-hidden">Zusammenfassung deiner Bestellung</caption>
+            <tbody>
+              <tr><th scope="row" class="fw-normal">Zwischensumme</th><td>20,97&nbsp;€</td></tr>
+              <tr><th scope="row" class="fw-normal">Versand</th><td>6,90&nbsp;€</td></tr>
+              <tr><th scope="row" class="fw-normal">Gesamtsumme</th><td>21,60&nbsp;€</td></tr>
+              <tr><th scope="row" class="fw-normal">Inkl. 19&nbsp;% MwSt.</th><td>27,87&nbsp;€</td></tr>
+            </tbody>
+          </table>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="agb" name="agb" required checked>
+            <label class="form-check-label text-sm" for="agb">
+              Mit deiner Bestellung erklärst du dich mit unseren Allgemeinen Geschäftsbedingungen,
+              Widerrufsbestimmungen und Datenschutzbestimmungen einverstanden.
+            </label>
+          </div>
+          <button type="submit" class="btn-solid theme-primary">Jetzt kaufen</button>
+        </div>
+      </div>
+    </form>
+
+  </main>
 
   <footer class="bg-1 border-top border-3 border-primary py-8">
     <div class="container">
