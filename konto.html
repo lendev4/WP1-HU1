@@ -69,13 +69,11 @@
         <div class="col-12 lg:col-6">
           <div class="mb-2">
             <label for="login-user" class="visually-hidden">Benutzername</label>
-            <input type="text" id="login-user" name="username" class="form-control bg-1 border-0"
-                   placeholder="Benutzername" autocomplete="username" required>
+            <input type="text" id="login-user" name="username" class="form-control bg-1 border-0" placeholder="Benutzername" autocomplete="username" required>
           </div>
           <div class="mb-3">
             <label for="login-pass" class="visually-hidden">Passwort</label>
-            <input type="password" id="login-pass" name="password" class="form-control bg-1 border-0"
-                   placeholder="Passwort" autocomplete="current-password" required>
+            <input type="password" id="login-pass" name="password" class="form-control bg-1 border-0" placeholder="Passwort" autocomplete="current-password" required>
           </div>
           <button type="submit" class="btn-solid theme-primary">Anmelden</button>
         </div>
@@ -87,34 +85,39 @@
 
       <!-- Rechnungsdetails -->
       <h2 class="fg-primary text-lg fw-semibold mb-3">Rechnungsdetails und neues Profil erstellen</h2>
-      <div class="row g-3 mb-10">
+      <div class="row g-6 mb-10">
 
         <!-- left column -->
         <div class="col-12 lg:col-6">
           <div class="mb-3">
             <label for="anrede" class="form-label text-sm">Anrede</label>
-            <input type="text" id="anrede" name="anrede" class="form-control bg-1" autocomplete="honorific-prefix">
+            <select id="anrede" name="anrede" class="form-control bg-1 border-0 border-2 border-bottom" autocomplete="honorific-prefix">
+              <option value="">Bitte wählen</option>
+              <option value="frau">Frau</option>
+              <option value="herr">Herr</option>
+              <option value="divers">Divers</option>
+            </select>
           </div>
           <div class="mb-3">
             <label for="vorname" class="form-label text-sm">Vorname *</label>
-            <input type="text" id="vorname" name="vorname" class="form-control bg-1" autocomplete="given-name" required>
+            <input type="text" id="vorname" name="vorname" class="form-control bg-1 border-0 border-2 border-bottom" autocomplete="given-name" required>
           </div>
           <div class="mb-3">
             <label for="nachname" class="form-label text-sm">Nachname *</label>
-            <input type="text" id="nachname" name="nachname" class="form-control bg-1" autocomplete="family-name" required>
+            <input type="text" id="nachname" name="nachname" class="form-control bg-1 border-0 border-2 border-bottom" autocomplete="family-name" required>
           </div>
           <div class="mb-3">
             <label for="land" class="form-label text-sm">Land</label>
-            <input type="land" id="land" name="land" class="form-control bg-1" autocomplete="country-name">
+            <input type="land" id="land" name="land" class="form-control bg-1 border-0 border-2 border-bottom" autocomplete="country-name">
           </div>
           <div class="row g-3">
             <div class="col-8">
               <label for="strasse" class="form-label text-sm">Straße *</label>
-              <input type="text" id="strasse" name="strasse" class="form-control bg-1" autocomplete="address-line1" required>
+              <input type="text" id="strasse" name="strasse" class="form-control bg-1 border-0 border-2 border-bottom" autocomplete="address-line1" required>
             </div>
             <div class="col-4">
               <label for="hausnummer" class="form-label text-sm">Hausnummer *</label>
-              <input type="text" id="hausnummer" name="hausnummer" class="form-control bg-1" required>
+              <input type="text" id="hausnummer" name="hausnummer" class="form-control bg-1 border-0 border-2 border-bottom" required>
             </div>
           </div>
         </div>
@@ -123,35 +126,35 @@
         <div class="col-12 lg:col-6">
           <div class="mb-3">
             <label for="plz" class="form-label text-sm">Postleitzahl *</label>
-            <input type="text" id="plz" name="plz" class="form-control bg-1" inputmode="numeric" autocomplete="postal-code" required>
+            <input type="text" id="plz" name="plz" class="form-control bg-1 border-0 border-2 border-bottom" inputmode="numeric" autocomplete="postal-code" required>
           </div>
           <div class="mb-3">
             <label for="ort" class="form-label text-sm">Ort | Stadt *</label>
-            <input type="text" id="ort" name="ort" class="form-control bg-1" autocomplete="address-level2" required>
+            <input type="text" id="ort" name="ort" class="form-control bg-1 border-0 border-2 border-bottom" autocomplete="address-level2" required>
           </div>
           <div class="mb-3">
             <label for="telefon" class="form-label text-sm">Telefon (optional)</label>
-            <input type="tel" id="telefon" name="telefon" class="form-control bg-1" autocomplete="tel">
+            <input type="tel" id="telefon" name="telefon" class="form-control bg-1 border-0 border-2 border-bottom" autocomplete="tel">
           </div>
           <div class="mb-3">
             <label for="email" class="form-label text-sm">E-Mail-Adresse *</label>
-            <input type="email" id="email" name="email" class="form-control bg-1" autocomplete="email" required>
+            <input type="email" id="email" name="email" class="form-control bg-1 border-0 border-2 border-bottom" autocomplete="email" required>
           </div>
           <div class="mb-3">
             <label for="anmerkung" class="form-label text-sm">Anmerkung zur Bestellung (optional)</label>
-            <textarea id="anmerkung" name="anmerkung" class="form-control bg-1" rows="2"></textarea>
+            <textarea id="anmerkung" name="anmerkung" rows="1" class="form-control bg-1 border-0 border-2 border-bottom" rows="2"></textarea>
           </div>
         </div>
       </div>
 
       <!-- Zahlungsart + Bestellung side by side -->
-      <div class="row g-5">
+      <div class="row g-6">
 
         <!-- left: payment -->
         <div class="col-12 lg:col-6">
           <fieldset>
             <legend class="fg-primary text-lg fw-semibold mb-3">Zahlungsart wählen</legend>
-            <div class="payment-box p-3">
+            <div class="p-4 bg-primary bg-20">
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="zahlungsart" id="pay-rechnung" value="rechnung" checked>
                 <label class="form-check-label" for="pay-rechnung">
@@ -187,9 +190,9 @@
             </tbody>
           </table>
 
-          <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" id="agb" name="agb" required checked>
-            <label class="form-check-label text-sm" for="agb">
+          <div class="form-field gap-6 mb-3">
+            <input class="check theme-accent rounded-0" type="checkbox" id="agb" name="agb" required checked>
+            <label class="text-sm" for="agb">
               Mit deiner Bestellung erklärst du dich mit unseren Allgemeinen Geschäftsbedingungen,
               Widerrufsbestimmungen und Datenschutzbestimmungen einverstanden.
             </label>
